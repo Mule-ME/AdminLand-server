@@ -6,7 +6,8 @@ import { APP_MONGO_URL } from "../constants/index.js"
 import User from "../models/User.js"
 import Product from "../models/Product.js"
 import ProductStat from "../models/ProductStat.js"
-import { dataUser, dataProduct, dataProductStat } from "../data/index.js"
+import Transaction from "../models/Transaction.js"
+import { dataUser, dataProduct, dataProductStat, dataTransaction } from "../data/index.js"
 
 const connectDB = async () => {
     try {
@@ -16,10 +17,11 @@ const connectDB = async () => {
             `MongoDB Connected to ${conn.connection.host}`.magenta.underline
         );
 
-        //ONLY_ADD_DATA_ONE_TIME
+        //HERE_IS_THE_DATA_INJECTOR_TRY_TO_ADD_DATA_ONLY_ONE_TIME
         // User.insertMany(dataUser)
         // Product.insertMany(dataProduct)
         // ProductStat.insertMany(dataProductStat)
+        // Transaction.insertMany(dataTransaction)
 
     } catch (error) {
         console.log(error)
