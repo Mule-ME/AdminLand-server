@@ -32,11 +32,13 @@ export const getCustomers = async (req, res) => {
 
 export const getTransactions = async (req, res) => {
     try {
-        //Search query
-        const searchQuery = new RegExp(search, "i");
 
         //sort should look like this : {"fields: "userId", "sort": "dec"}
         const { page = 1, pageSize = 20, sort = null, search = "" } = req.query;
+
+        //Search query
+        const searchQuery = new RegExp(search, "i");
+
 
         //formatted sort should look like {userId: -1}
         const generateSort = () => {
@@ -71,6 +73,20 @@ export const getTransactions = async (req, res) => {
             {
                 $unwind: "$user",
             },
+            {
+                $project: {
+                    cost: 1,
+                    product: 1,
+                    createdAt: 1,
+                    user: {
+                        name: 1,
+                        phoneNumber: 1,
+                        country: 1,
+
+                    },
+
+                },
+            }
         ];
 
         // Conditionally add $match stage if search is not empty
