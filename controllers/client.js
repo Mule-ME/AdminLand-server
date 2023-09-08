@@ -47,7 +47,9 @@ export const getTransactions = async (req, res) => {
 
         const sortFormatted = Boolean(sort) ? generateSort : {};
 
-        const transaction = await Transaction.aggregate([
+
+
+        const aggregationPipeline = [
             {
                 $lookup: {
                     from: "users",
@@ -64,17 +66,31 @@ export const getTransactions = async (req, res) => {
                     as: "product",
                 },
             },
-        ])
-        //     .find({
-        //     $or: {
-        //         cost: { $regex: new RegExp(search, "i") },
-        //         userId: { $regex: new RegExp(search, "i") },
-        //     },
-        // })
+        ];
 
-        //     .sort(sortFormatted)
-        //     .skip(page * pageSize)
-        //     .limit(pageSize);
+        // Conditionally add $match stage if search is not empty
+        if (search) {
+            aggregationPipeline.push({
+                $match: {
+                    $or: [
+                        { cost: { $regex: new RegExp(search, "i") } },
+                        { userId: { $regex: new RegExp(search, "i") } },
+                    ],
+                },
+            });
+        }
+
+        // Conditionally add $sort stage if sortFormatted is not empty
+        if (Object.keys(sortFormatted).length > 0) {
+            aggregationPipeline.push({ $sort: sortFormatted });
+        }
+
+        const transaction = await Transaction.aggregate(aggregationPipeline)
+            .skip(page * pageSize)
+            .limit(pageSize);
+
+
+
 
         const total = await Transaction.countDocuments({
             name: { $regex: search, $options: "i" }
