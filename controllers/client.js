@@ -32,6 +32,9 @@ export const getCustomers = async (req, res) => {
 
 export const getTransactions = async (req, res) => {
     try {
+        //Search query
+        const searchQuery = new RegExp(search, "i");
+
         //sort should look like this : {"fields: "userId", "sort": "dec"}
         const { page = 1, pageSize = 20, sort = null, search = "" } = req.query;
 
@@ -46,8 +49,6 @@ export const getTransactions = async (req, res) => {
         };
 
         const sortFormatted = Boolean(sort) ? generateSort : {};
-
-
 
         const aggregationPipeline = [
             {
@@ -66,6 +67,10 @@ export const getTransactions = async (req, res) => {
                     as: "product",
                 },
             },
+
+            {
+                $unwind: "$user",
+            },
         ];
 
         // Conditionally add $match stage if search is not empty
@@ -73,8 +78,12 @@ export const getTransactions = async (req, res) => {
             aggregationPipeline.push({
                 $match: {
                     $or: [
-                        { cost: { $regex: new RegExp(search, "i") } },
-                        { userId: { $regex: new RegExp(search, "i") } },
+                        {
+                            cost: { $regex: searchQuery },
+                        },
+                        {
+                            "user.name": { $regex: searchQuery },
+                        },
                     ],
                 },
             });
@@ -87,14 +96,14 @@ export const getTransactions = async (req, res) => {
 
         const transaction = await Transaction.aggregate(aggregationPipeline)
             .skip(page * pageSize)
-            .limit(pageSize);
+            .limit(Number(pageSize));
 
-
-
-
-        const total = await Transaction.countDocuments({
-            name: { $regex: search, $options: "i" }
-        })
+        const total = await Transaction.count({
+            $or: [
+                { cost: { $regex: searchQuery } },
+                { "user.name": { $regex: searchQuery } },
+            ],
+        });
 
         res.status(200).json({ data: transaction, total });
     } catch (error) {
