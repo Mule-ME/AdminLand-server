@@ -176,6 +176,11 @@
     "object-assign" "^4"
     "vary" "^1"
 
+"country-iso-2-to-3@^1.1.0":
+  "integrity" "sha512-+xaB6XPuuLuSQEjejWXjff7s5AMyisPk3jBmIqM7aymup79mEcinNkUiIpe4VedSPWCT+/bMW/EDJvRaiDaWKw=="
+  "resolved" "https://registry.npmjs.org/country-iso-2-to-3/-/country-iso-2-to-3-1.1.0.tgz"
+  "version" "1.1.0"
+
 "dayjs@^1.11.9":
   "integrity" "sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA=="
   "resolved" "https://registry.npmjs.org/dayjs/-/dayjs-1.11.9.tgz"
