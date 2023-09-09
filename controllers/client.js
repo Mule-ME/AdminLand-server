@@ -10,8 +10,12 @@ export const getProducts = async (req, res) => {
                     from: "productstats",
                     localField: "_id",
                     foreignField: "productId",
-                    as: "status",
+                    as: "stat",
                 },
+
+            },
+            {
+                $unwind: "$stat",
             },
         ]);
 
@@ -55,20 +59,21 @@ export const getTransactions = async (req, res) => {
         const aggregationPipeline = [
             {
                 $lookup: {
+                    from: "products",
+                    localField: "products",
+                    foreignField: "_id",
+                    as: "products",
+                },
+            },
+            {
+                $lookup: {
                     from: "users",
                     localField: "userId",
                     foreignField: "_id",
                     as: "user",
                 },
             },
-            {
-                $lookup: {
-                    from: "products",
-                    localField: "products",
-                    foreignField: "_id",
-                    as: "product",
-                },
-            },
+
 
             {
                 $unwind: "$user",
@@ -76,7 +81,6 @@ export const getTransactions = async (req, res) => {
             {
                 $project: {
                     cost: 1,
-                    product: 1,
                     createdAt: 1,
                     user: {
                         name: 1,
@@ -84,10 +88,14 @@ export const getTransactions = async (req, res) => {
                         country: 1,
 
                     },
+                    products: 1,
 
                 },
             }
         ];
+
+        // console.log("Aggregation Pipeline:", JSON.stringify(aggregationPipeline, null, 2));
+
 
         // Conditionally add $match stage if search is not empty
         if (search) {
