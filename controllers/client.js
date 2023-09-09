@@ -1,7 +1,7 @@
 import Product from "../models/Product.js";
 import User from "../models/User.js";
 import Transaction from "../models/Transaction.js";
-
+import getCountryIso3 from "country-iso-2-to-3";
 export const getProducts = async (req, res) => {
     try {
         const productWithStat = await Product.aggregate([
@@ -12,14 +12,13 @@ export const getProducts = async (req, res) => {
                     foreignField: "productId",
                     as: "stat",
                 },
-
             },
             {
                 $unwind: "$stat",
             },
         ]);
 
-        res.status(200).json(productWithStat);
+        res.status(200).json({ data: productWithStat });
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
@@ -28,7 +27,7 @@ export const getProducts = async (req, res) => {
 export const getCustomers = async (req, res) => {
     try {
         const customers = await User.find({ role: "user" }).select("-password");
-        res.status(200).json(customers);
+        res.status(200).json({ data: customers });
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
@@ -36,13 +35,11 @@ export const getCustomers = async (req, res) => {
 
 export const getTransactions = async (req, res) => {
     try {
-
         //sort should look like this : {"fields: "userId", "sort": "dec"}
         const { page = 1, pageSize = 20, sort = null, search = "" } = req.query;
 
         //Search query
         const searchQuery = new RegExp(search, "i");
-
 
         //formatted sort should look like {userId: -1}
         const generateSort = () => {
@@ -74,7 +71,6 @@ export const getTransactions = async (req, res) => {
                 },
             },
 
-
             {
                 $unwind: "$user",
             },
@@ -86,16 +82,13 @@ export const getTransactions = async (req, res) => {
                         name: 1,
                         phoneNumber: 1,
                         country: 1,
-
                     },
                     products: 1,
-
                 },
-            }
+            },
         ];
 
         // console.log("Aggregation Pipeline:", JSON.stringify(aggregationPipeline, null, 2));
-
 
         // Conditionally add $match stage if search is not empty
         if (search) {
@@ -133,4 +126,27 @@ export const getTransactions = async (req, res) => {
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
+};
+
+export const getGeography = async (req, res) => {
+    try {
+        const users = await User.find();
+
+        const mappedLocations = users.reduce((acc, { country }) => {
+            const countryISO3 = getCountryIso3(country);
+            if (!acc[countryISO3]) {
+                acc[countryISO3] = { id: countryISO3, value: 0 };
+            }
+            acc[countryISO3].value++;
+            return acc;
+        }, {});
+
+        const formattedLocations = Object.values(mappedLocations);
+
+        res.status(200).json({ data: formattedLocations });
+
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+
 };
