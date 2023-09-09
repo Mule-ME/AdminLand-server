@@ -4,7 +4,7 @@ const ProductStatSchema = mongoose.Schema(
     {
         productId: { type: mongoose.Types.ObjectId, ref: "Product" },
         yearlySalesTotal: Number,
-        yearlyTotalSoldUint: Number,
+        yearlyTotalSoldUnits: Number,
         year: Number,
         monthlyData: [
             {
