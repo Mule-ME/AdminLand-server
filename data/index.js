@@ -576,7 +576,6 @@ export const dataAffiliateStat = [
       "63701d74f03239b7f700003a",
       "63701d74f03239f09e00019b",
       "63701d74f03239444100031c",
-      "63701d74f032395b33000149",
       "63701d74f032396b8e000023",
       "63701d74f03239b91300003d",
       "63701d74f03239c72c000193",
@@ -1066,7 +1065,6 @@ export const dataAffiliateStat = [
       "63701d74f03239db69000151",
       "63701d74f03239d81e00003a",
       "63701d74f03239b7f7000022",
-      "63701d74f032395b33000149",
       "63701d74f032390a34000338",
       "63701d74f03239d40b000066",
       "63701d74f032395b33000154",
@@ -1179,7 +1177,6 @@ export const dataAffiliateStat = [
       "63701d74f03239528f000034",
       "63701d74f03239867500014f",
       "63701d74f03239528f00002d",
-      "63701d74f032395b33000149",
       "63701d74f032396b8e000027",
       "63701d74f032399c0000013a",
       "63701d74f03239569400002b",
@@ -13158,7 +13155,7 @@ export const dataProductStat = [
 export const dataTransaction = [
   {
     _id: "63701d74f03239c72c000192",
-    userId: "63701cc1f032390a34000319",
+    userId: "63701cc1f03239c72c000181",
     cost: 3584.18,
     products: ["63701d24f03239c72c00018e", "63701d24f03239867500012d"],
   },
@@ -13170,7 +13167,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c000194",
-    userId: "63701cc1f03239528f00000d",
+    userId: "63701cc1f03239c72c000181",
     cost: 3215.35,
     products: [
       "63701d25f03239d591000327",
@@ -13180,13 +13177,13 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c000195",
-    userId: "63701cc1f03239f09e000184",
+    userId: "63701cc1f03239c72c000181",
     cost: 2639.18,
     products: ["63701d24f03239867500012c", "63701d24f03239d40b000053"],
   },
   {
     _id: "63701d74f03239c72c000196",
-    userId: "63701cc1f032396b8e000007",
+    userId: "63701cc1f03239c72c000181",
     cost: 3944.07,
     products: [
       "63701d25f03239d591000328",
@@ -13196,7 +13193,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c000197",
-    userId: "63701cc1f0323986f300011c",
+    userId: "63701cc1f03239c72c000181",
     cost: 2828.05,
     products: [
       "63701d24f0323944410002ed",
@@ -13217,7 +13214,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c000199",
-    userId: "63701cc1f03239f09e00018c",
+    userId: "63701cc1f03239c72c000181",
     cost: 2838.72,
     products: [
       "63701d24f03239c72c00018e",
@@ -13234,7 +13231,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c00019b",
-    userId: "63701cc1f03239528f00000c",
+    userId: "63701cc1f03239c72c000181",
     cost: 526.17,
     products: [
       "63701d24f03239db6900012c",
@@ -13246,7 +13243,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c00019c",
-    userId: "63701cc1f032390a34000322",
+    userId: "63701cc1f03239c72c000181",
     cost: 2455.22,
     products: [
       "63701d24f032395694000015",
@@ -13257,7 +13254,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c00019d",
-    userId: "63701cc1f03239cdc5000006",
+    userId: "63701cc1f03239c72c000181",
     cost: 479.22,
     products: [
       "63701d24f0323944410002ec",
@@ -13267,7 +13264,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c00019e",
-    userId: "63701cc1f03239569400000b",
+    userId: "63701cc1f03239c72c000181",
     cost: 2678.42,
     products: [
       "63701d24f03239d81e000017",
@@ -13278,7 +13275,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c00019f",
-    userId: "63701cc1f032394c4900011e",
+    userId: "63701cc1f03239c72c000181",
     cost: 1213.83,
     products: [
       "63701d24f03239d81e000017",
@@ -13300,7 +13297,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c0001a1",
-    userId: "63701cc1f03239b91300000f",
+    userId: "63701cc1f03239c72c000181",
     cost: 2640.21,
     products: ["63701d24f03239b7f7000018", "63701d24f03239b7f7000018"],
   },
@@ -13318,7 +13315,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c0001a4",
-    userId: "63701cc1f03239bef0000129",
+    userId: "63701cc1f03239c72c000181",
     cost: 3332.39,
     products: [
       "63701d24f03239b7f7000018",
@@ -13336,7 +13333,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c0001a6",
-    userId: "63701cc1f032390a3400031f",
+    userId: "63701cc1f03239c72c000181",
     cost: 2771.08,
     products: [
       "63701d24f03239d81e000017",
@@ -13356,7 +13353,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c0001a8",
-    userId: "63701cc1f0323944410002de",
+    userId: "63701cc1f03239c72c000181",
     cost: 3430.65,
     products: ["63701d24f03239d81e000017", "63701d24f032390a34000327"],
   },
@@ -13380,7 +13377,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c0001ac",
-    userId: "63701cc1f032395b33000128",
+    userId: "63701cc1f03239c72c000181",
     cost: 2028.64,
     products: [
       "63701d24f03239c72c000190",
@@ -13398,7 +13395,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239c72c0001ae",
-    userId: "63701cc1f03239b7f700000e",
+    userId: "63701cc1f03239c72c000181",
     cost: 601.72,
     products: [
       "63701d24f032395694000015",
@@ -13727,7 +13724,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032398675000140",
-    userId: "63701cc1f0323944410002de",
+    userId: "63701d74f032396b8e000028",
     cost: 404.7,
     products: [
       "63701d24f03239d40b000053",
@@ -13737,7 +13734,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032398675000141",
-    userId: "63701cc1f03239d59100031d",
+    userId: "63701cc1f03239c72c000181",
     cost: 1349.65,
     products: [
       "63701d24f032390a34000329",
@@ -13793,7 +13790,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032398675000147",
-    userId: "63701cc1f0323986f3000124",
+    userId: "63701cc1f03239c72c000181",
     cost: 1416.51,
     products: ["63701d24f03239c72c00018e"],
   },
@@ -13860,7 +13857,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239867500014f",
-    userId: "63701cc1f03239b91300000d",
+    userId: "63701cc1f03239c72c000181",
     cost: 1729.13,
     products: [
       "63701d24f03239c72c00018f",
@@ -13923,7 +13920,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032398675000158",
-    userId: "63701cc1f03239d40b000040",
+    userId: "63701cc1f03239c72c000181",
     cost: 1669.08,
     products: [
       "63701d24f032390a34000329",
@@ -13983,7 +13980,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f700001c",
-    userId: "63701cc1f03239c72c000182",
+    userId: "63701cc1f03239c72c000181",
     cost: 1347.43,
     products: ["63701d24f03239b7f7000018"],
   },
@@ -14024,7 +14021,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f7000021",
-    userId: "63701cc1f0323944410002e0",
+    userId: "63701cc1f03239c72c000181",
     cost: 1093.3,
     products: [
       "63701d24f032395694000015",
@@ -14069,7 +14066,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f7000026",
-    userId: "63701cc1f03239db69000125",
+    userId: "63701cc1f03239c72c000181",
     cost: 2729.82,
     products: ["63701d24f03239b7f7000016", "63701d24f03239d81e000017"],
   },
@@ -14104,7 +14101,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f700002a",
-    userId: "63701cc1f03239b7f7000011",
+    userId: "63701cc1f03239c72c000181",
     cost: 3971.67,
     products: [
       "63701d24f03239d81e000017",
@@ -14139,7 +14136,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f700002e",
-    userId: "63701cc1f03239d591000326",
+    userId: "63701cc1f03239c72c000181",
     cost: 2546.93,
     products: [
       "63701d24f03239d81e000018",
@@ -14210,7 +14207,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f7000036",
-    userId: "63701cc1f03239db69000120",
+    userId: "63701cc1f03239c72c000181",
     cost: 1800.07,
     products: ["63701d24f03239b7f7000018"],
   },
@@ -14282,7 +14279,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239b7f700003e",
-    userId: "63701cc1f032396b8e000010",
+    userId: "63701cc1f03239c72c000181",
     cost: 1588.75,
     products: [
       "63701d24f03239867500012b",
@@ -14383,7 +14380,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f0323944410002f3",
-    userId: "63701cc1f03239b913000007",
+    userId: "63701cc1f03239c72c000181",
     cost: 1751.19,
     products: [
       "63701d24f03239b7f7000018",
@@ -14463,7 +14460,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f0323944410002fc",
-    userId: "63701cc1f03239d81e00000c",
+    userId: "63701cc1f03239c72c000181",
     cost: 1696.79,
     products: ["63701d24f03239d81e000017", "63701d24f03239b7f7000017"],
   },
@@ -14498,7 +14495,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032394441000300",
-    userId: "63701cc1f032394c4900011c",
+    userId: "63701cc1f03239c72c000181",
     cost: 145.14,
     products: [
       "63701d24f03239b7f7000016",
@@ -14544,11 +14541,10 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032394441000305",
-    userId: "63701cc1f03239d59100031c",
+    userId: "63701cc1f03239c72c000181",
     cost: 20.45,
     products: [
       "63701d24f03239b7f7000015",
-
       "63701d24f0323944410002ec",
       "63701d24f032395694000016",
       "63701d24f03239b7f7000016",
@@ -14566,7 +14562,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032394441000307",
-    userId: "63701cc1f03239c72c000185",
+    userId: "63701cc1f03239c72c000181",
     cost: 2395.14,
     products: [
       "63701d24f03239d81e000017",
@@ -14595,7 +14591,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239444100030a",
-    userId: "63701cc1f03239b91300000e",
+    userId: "63701cc1f03239c72c000181",
     cost: 2774.08,
     products: [
       "63701d24f032390a34000327",
@@ -14607,7 +14603,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239444100030b",
-    userId: "63701cc1f03239d81e00000b",
+    userId: "63701cc1f03239c72c000181",
     cost: 3241.98,
     products: [
       "63701d24f03239d81e000017",
@@ -14646,7 +14642,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239444100030f",
-    userId: "63701cc1f0323944410002dd",
+    userId: "63701cc1f03239c72c000181",
     cost: 3720.71,
     products: [
       "63701d24f03239d81e000016",
@@ -14703,7 +14699,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032394441000316",
-    userId: "63701cc1f0323944410002de",
+    userId: "63701cc1f03239c72c000181",
     cost: 1783.11,
     products: [
       "63701d24f0323944410002ec",
@@ -14772,7 +14768,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d81e000019",
-    userId: "63701cc1f03239b91300000b",
+    userId: "63701cc1f03239c72c000181",
     cost: 1206.91,
     products: ["63701d24f03239d81e000017"],
   },
@@ -14837,7 +14833,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d81e000020",
-    userId: "63701cc1f032395b3300011b",
+    userId: "63701cc1f03239c72c000181",
     cost: 1236.25,
     products: [
       "63701d24f03239b7f7000016",
@@ -14926,7 +14922,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d81e00002a",
-    userId: "63701cc1f03239cdc500000f",
+    userId: "63701cc1f03239c72c000181",
     cost: 2519.39,
     products: [
       "63701d24f03239b7f7000018",
@@ -15000,7 +14996,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d81e000033",
-    userId: "63701cc1f03239cdc5000013",
+    userId: "63701cc1f03239c72c000181",
     cost: 2149.4,
     products: [
       "63701d24f03239d81e000017",
@@ -15070,7 +15066,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d81e00003b",
-    userId: "63701cc1f03239d591000323",
+    userId: "63701cc1f03239c72c000181",
     cost: 1550.04,
     products: [
       "63701d24f03239b7f7000016",
@@ -15148,7 +15144,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d81e000043",
-    userId: "63701cc1f03239bef000011e",
+    userId: "63701cc1f03239c72c000181",
     cost: 944.22,
     products: ["63701d24f03239d81e000017", "63701d24f032395694000016"],
   },
@@ -15188,7 +15184,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a3400032c",
-    userId: "63701cc1f032396b8e000011",
+    userId: "63701cc1f03239c72c000181",
     cost: 1298.33,
     products: ["63701d24f032390a34000329", "63701d24f03239867500012a"],
   },
@@ -15220,7 +15216,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a34000330",
-    userId: "63701cc1f032398675000125",
+    userId: "63701cc1f03239c72c000181",
     cost: 3800.1,
     products: [
       "63701d24f03239b7f7000016",
@@ -15269,7 +15265,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a34000336",
-    userId: "63701cc1f03239d40b00003a",
+    userId: "63701cc1f03239c72c000181",
     cost: 1933.72,
     products: [
       "63701d24f03239d81e000016",
@@ -15344,7 +15340,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a3400033e",
-    userId: "63701cc1f032398675000127",
+    userId: "63701cc1f03239c72c000181",
     cost: 526.81,
     products: [
       "63701d24f03239c72c00018f",
@@ -15410,7 +15406,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a34000345",
-    userId: "63701cc1f03239f09e000185",
+    userId: "63701cc1f03239c72c000181",
     cost: 3301.41,
     products: [
       "63701d24f032395694000015",
@@ -15421,7 +15417,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a34000346",
-    userId: "63701cc1f032396b8e000010",
+    userId: "63701cc1f03239c72c000181",
     cost: 3120.14,
     products: ["63701d24f03239d81e000017", "63701d24f032395694000015"],
   },
@@ -15491,7 +15487,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032390a3400034e",
-    userId: "63701cc1f03239d81e000010",
+    userId: "63701cc1f03239c72c000181",
     cost: 1059.47,
     products: [
       "63701d24f032395b3300012d",
@@ -15607,7 +15603,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b3300012e",
-    userId: "63701cc1f0323944410002e4",
+    userId: "63701cc1f03239c72c000181",
     cost: 838.14,
     products: [
       "63701d24f032395694000015",
@@ -15694,7 +15690,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b33000137",
-    userId: "63701cc1f032398675000127",
+    userId: "63701cc1f03239c72c000181",
     cost: 2687.49,
     products: [
       "63701d25f03239d591000328",
@@ -15770,7 +15766,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b3300013e",
-    userId: "63701cc1f03239528f00000b",
+    userId: "63701cc1f03239c72c000181",
     cost: 751.81,
     products: ["63701d24f03239c72c000190"],
   },
@@ -15806,7 +15802,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b33000143",
-    userId: "63701cc1f03239d81e00000e",
+    userId: "63701cc1f03239c72c000181",
     cost: 583.34,
     products: [
       "63701d24f03239d81e000017",
@@ -15827,7 +15823,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b33000145",
-    userId: "63701cc1f032396b8e000011",
+    userId: "63701cc1f03239c72c000181",
     cost: 2951.06,
     products: [
       "63701d24f032390a3400032a",
@@ -15861,7 +15857,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b33000149",
-    userId: "63701cc1f032395b3300011d",
+    userId: "63701cc1f03239c72c000181",
     cost: 2824.68,
     products: [
       "63701d24f03239d81e000017",
@@ -15907,7 +15903,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b3300014d",
-    userId: "63701cc1f03239b91300000b",
+    userId: "63701cc1f03239c72c000181",
     cost: 810.78,
     products: ["63701d24f03239c72c00018f"],
   },
@@ -15979,7 +15975,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395b33000156",
-    userId: "63701cc1f03239d591000324",
+    userId: "63701cc1f03239c72c000181",
     cost: 2745.09,
     products: ["63701d24f03239d81e000017"],
   },
@@ -16065,7 +16061,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d59100032f",
-    userId: "63701cc1f032394c49000125",
+    userId: "63701cc1f03239c72c000181",
     cost: 1604.44,
     products: ["63701d24f032396b8e000016", "63701d24f03239b7f7000017"],
   },
@@ -16123,7 +16119,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d591000337",
-    userId: "63701cc1f03239c72c000187",
+    userId: "63701cc1f03239c72c000181",
     cost: 2297.98,
     products: [
       "63701d24f0323944410002ec",
@@ -16178,7 +16174,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d59100033e",
-    userId: "63701cc1f03239528f00000e",
+    userId: "63701cc1f03239c72c000181",
     cost: 124.21,
     products: [
       "63701d24f03239b7f7000016",
@@ -16190,7 +16186,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d59100033f",
-    userId: "63701cc1f032399c00000124",
+    userId: "63701cc1f03239c72c000181",
     cost: 3844.04,
     products: [
       "63701d24f032395b3300012b",
@@ -16238,7 +16234,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d591000344",
-    userId: "63701cc1f0323986f3000122",
+    userId: "63701cc1f03239c72c000181",
     cost: 252.61,
     products: ["63701d24f03239d81e000018", "63701d24f03239d81e000017"],
   },
@@ -16314,7 +16310,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d59100034d",
-    userId: "63701cc1f0323986f300011d",
+    userId: "63701cc1f03239c72c000181",
     cost: 3647.52,
     products: [
       "63701d24f03239d81e000018",
@@ -16382,7 +16378,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d591000353",
-    userId: "63701cc1f032390a3400031a",
+    userId: "63701cc1f03239c72c000181",
     cost: 3648.94,
     products: [, "63701d24f0323944410002ec"],
   },
@@ -16416,7 +16412,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f03239d591000358",
-    userId: "63701cc1f032399c00000123",
+    userId: "63701cc1f03239c72c000181",
     cost: 1254.83,
     products: ["63701d24f03239d81e000017"],
   },
@@ -16484,7 +16480,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395694000020",
-    userId: "63701cc1f032398675000122",
+    userId: "63701cc1f03239c72c000181",
     cost: 2029.59,
     products: ["63701d24f03239528f000016", "63701d24f03239d81e000017"],
   },
@@ -16541,7 +16537,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032395694000026",
-    userId: "63701cc1f03239f09e000183",
+    userId: "63701cc1f03239c72c000181",
     cost: 1952.66,
     products: [
       "63701d24f03239d81e000018",
@@ -16835,7 +16831,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032396b8e00001b",
-    userId: "63701cc1f03239d81e00000e",
+    userId: "63701cc1f03239c72c000181",
     cost: 1000.84,
     products: [
       "63701d24f03239d40b000053",
@@ -16955,7 +16951,7 @@ export const dataTransaction = [
   },
   {
     _id: "63701d74f032396b8e000028",
-    userId: "63701cc1f0323944410002e5",
+    userId: "63701d74f032396b8e000028",
     cost: 118.18,
     products: ["63701d24f0323944410002ed", "63701d24f03239c72c000191"],
   },

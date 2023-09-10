@@ -19,7 +19,7 @@ const connectDB = async () => {
             `MongoDB Connected to ${conn.connection.host}`.magenta.underline
         );
 
-        //HERE_IS_THE_DATA_INJECTOR_TRY_TO_ADD_DATA_ONLY_ONE_TIME
+        // HERE_IS_THE_DATA_INJECTOR_TRY_TO_ADD_DATA_ONLY_ONE_TIME
         // User.insertMany(dataUser)
         // Product.insertMany(dataProduct)
         // ProductStat.insertMany(dataProductStat)

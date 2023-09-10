@@ -36,8 +36,24 @@ export const getUserPerformance = async (req, res) => {
                     pipeline: [
                         {
                             $match: {
-                                $expr: { $in: ["$_id", "$$affiliateSales"] },
-                            },
+                                $expr: {
+                                    $and: [
+                                        { $in: ["$_id", "$$affiliateSales"] },
+                                        { $eq: ["$userId", new mongoose.Types.ObjectId(id)] }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            $lookup: {
+                                from: "users",
+                                localField: "userId",
+                                foreignField: "_id",
+                                as: "user",
+                            }
+                        },
+                        {
+                            $unwind: "$user"
                         },
                     ],
                     as: "saleTransactions",
@@ -49,12 +65,13 @@ export const getUserPerformance = async (req, res) => {
                         $filter: {
                             input: "$saleTransactions",
                             as: "transaction",
-                            cond: { $ne: ["$$transaction", null] },
-                        },
-                    },
-                },
-            },
+                            cond: { $ne: ["$$transaction", null] }
+                        }
+                    }
+                }
+            }
         ]);
+
 
         if (userWithSales.length === 0) {
             res.status(404).json({ message: "User not found" });
