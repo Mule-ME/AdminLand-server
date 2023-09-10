@@ -54,6 +54,7 @@ export const getTransactions = async (req, res) => {
         const sortFormatted = Boolean(sort) ? generateSort : {};
 
         const aggregationPipeline = [
+
             {
                 $lookup: {
                     from: "products",
